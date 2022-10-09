@@ -31,9 +31,9 @@ def image_masking(srcimg,destimg,dest_points):
     cv2.fillConvexPoly(destimg,dest_points,(255,255,255))
     wrap_img=wrap_img+destimg
     # cv2.imshow('wrap',wrap_img)
-#     return wrap_img
+    return wrap_img
     # results=cv2.bitwise_and(wrap_img,wrap_img,destimg,mask=mask)
-    return results
+#     return results
 # 
 while True:
     ret,frame=cap.read()
